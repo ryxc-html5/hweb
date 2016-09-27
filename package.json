@@ -1,0 +1,59 @@
+{
+  "name": "hrtPortals",
+  "version": "0.0.1",
+  "description": "华润通portals",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "bootstrap": "^3.3.6",
+    "bxslider": "^4.2.6",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "fastclick": "^1.0.6",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.19.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "jquery": "^3.0.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "md5": "^2.1.0",
+    "mockjs": "^1.0.0",
+    "redux": "^3.5.2",
+    "revue": "^2.2.0",
+    "style-loader": "^0.13.1",
+    "superagent": "^2.0.0",
+    "sweetalert": "^1.1.3",
+    "swiper": "^3.3.1",
+    "url-loader": "^0.5.7",
+    "vue": "^1.0.24",
+    "vue-datetime-picker": "^0.2.1",
+    "vue-hot-reload-api": "^1.3.2",
+    "vue-html-loader": "^1.2.2",
+    "vue-loader": "^8.5.2",
+    "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13",
+    "vue-style-loader": "^1.0.0",
+    "vuex": "^0.8.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.1"
+  },
+  "scripts": {
+    "admindev": "webpack-dev-server --config admin.config.js --hot --inline --hide-chunks --port 8080 --host 0.0.0.0",
+    "storedev": "webpack-dev-server --config store.config.js --hot --inline --hide-chunks --port 8080 --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://10.0.55.82/frontend/portals.git"
+  },
+  "author": "hrt",
+  "license": "ISC"
+}

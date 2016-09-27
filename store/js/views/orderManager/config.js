@@ -1,0 +1,93 @@
+/**
+ * 清除字符串结尾与开头的空白符
+ */
+if (!String.trim) {
+  String.prototype.trim = function(){
+    return this.replace(/^\s+|\s+$/g, '');
+  };
+}
+
+export default {
+  ajaxUrl:{
+    logisticList:"/Ucenter/ShopOrders/getLogisticCorpList",//物流公司列表
+    orderStatusList:"/Ucenter/ShopOrders/getOrderStatusList",//订单状态列表
+    orderList:"/Ucenter/ShopOrders/getOrderList",//订单列表
+    sendOrder:"/Ucenter/ShopOrders/startDelivery",//发货
+    noticeOrder:"/Ucenter/ShopOrders/noticeDeliveryGoods",//通知提货
+    exportOrder:"/Ucenter/ShopOrders/explortOrdersInfo",//导出
+    orderDetail:"/Ucenter/ShopOrders/getOrderData"//订单详情
+  },
+  //订单状态
+  orderStatus:[
+    {
+      label:"全部",
+      value:"0"
+    },
+    {
+      label:"待付款",
+      value:"1"
+    },
+    {
+      label:"待发货",
+      value:"2"
+    },
+    {
+      label:"待收货",
+      value:"3"
+    },
+    {
+      label:"交易成功",
+      value:"4"
+    },
+    {
+      label:"交易完成",
+      value:"5"
+    },
+    {
+      label:"交易关闭",
+      value:"6"
+    },
+    {
+      label:"待商家备货",
+      value:"7"
+    },
+    {
+      label:"待提货",
+      value:"8"
+    }
+  ],
+  //特殊订单
+  specialOrder:[
+    {
+      label:"全部",
+      value:"0"
+    },
+    {
+      label:"自提订单",
+      value:"1"
+    },
+    {
+      label:"催发货订单",
+      value:"2"
+    }
+  ],
+  //历史订单
+  historyOrder:[
+    {
+      label:"全部",
+      value:"0"
+    },
+    {
+      label:"近三个月",
+      value:"1"
+    },
+    {
+      label:"近六个月",
+      value:"2"
+    },
+    {
+      label:"近一年",
+      value:"3"
+    }
+  ]
+}
